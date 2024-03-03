@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea 10</title>
+    <link rel="stylesheet" href="CSS/Tareas.css">
+</head>
+<body>
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Personales.html">PERSONALES</a>
+                    <ul class="submenu">
+                        <li><a href="Biografia.html">Biografía</a></li>
+                        <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+                    </ul>
+                </li>
+                <li><a href="MenuTareas.html">TAREAS</a>
+                    <ul class="submenu">
+                        <li><a href="Tarea1.html">Tarea 1</a></li>
+                        <li><a href="Tarea2.html">Tarea 2</a></li>
+                        <li><a href="Tarea3.html">Tarea 3</a></li>
+                        <li><a href="Tarea4.html">Tarea 4</a></li>
+                        <li><a href="Tarea5.html">Tarea 5</a></li>
+                        <li><a href="Tarea6.html">Tarea 6</a></li>
+                        <li><a href="Tarea7.html">Tarea 7</a></li>
+                        <li><a href="Tarea8.html">Tarea 8</a></li>
+                        <li><a href="Tarea9.html">Tarea 9</a></li>
+                        <li><a href="Tarea10.html">Tarea 10</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Tarea 10</h2>
+    <h1>Lenguaje SQL</h1>
+
+    <div class="principal">
+        
+        <div class="simbologia">
+            <h2><strong>SIMBOLOGIA</strong></h2>
+            <div class="simb1">
+                <table>
+                    <tr>
+                        <td><strong>OPERADOR</strong></td>
+                        <td><strong>SIGNIFICADO</strong></td>
+                        <td><strong>OPERADOR</strong></td>
+                        <td><strong>SIGNIFICADO</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">SELECT</td>
+                        <td class="celda2">Selecciona datos de una tabla</td>
+                        <td class="celda1">WHERE</td>
+                        <td class="celda2">Filtra resultados basados en una condición</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">FROM</td>
+                        <td class="celda2">Especifica la tabla de la cual seleccionar datos</td>
+                        <td class="celda1">ORDER BY</td>
+                        <td class="celda2">Ordena resultados</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">INSERT INTO</td>
+                        <td class="celda2">Inserta nuevos registros en una tabla</td>
+                        <td class="celda1">UPDATE</td>
+                        <td class="celda2">Actualiza registros en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">DELETE</td>
+                        <td class="celda2">Elimina registros de una tabla</td>
+                        <td class="celda1">JOIN</td>
+                        <td class="celda2">Combina datos de múltiples tablas</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="simb2">
+                <table>
+                    <tr>
+                        <th>Palabras Clave</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td class="celda1">SELECT</td>
+                        <td class="celda1">Utilizado para recuperar datos de una o más tablas</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2">INSERT</td>
+                        <td class="celda2">Inserta nuevos registros en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">UPDATE</td>
+                        <td class="celda1">Modifica registros existentes en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2">DELETE</td>
+                        <td class="celda2">Elimina registros de una tabla</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">WHERE</td>
+                        <td class="celda1">Especifica condiciones para filtrar resultados</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2">JOIN</td>
+                        <td class="celda2">Combina datos de múltiples tablas</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <div class="sintaxis">
+            <h2><strong>SINTAXIS</strong></h2>
+            <table>
+                <tr>
+                    <td><strong>SENTENCIA</strong></td>
+                    <td><strong>DESCRIPCION</strong></td>
+                    <td><strong>EJEMPLO</strong></td>
+                </tr>
+                <tr>
+                    <td class="celda2">SELECT columnas</td>
+                    <td class="celda2">Selecciona columnas específicas de una tabla</td>
+                    <td class="celda2">SELECT nombre, edad FROM usuarios;</td>
+                </tr>
+                <tr>
+                    <td class="celda1">FROM tabla</td>
+                    <td class="celda1">Especifica la tabla de la cual seleccionar datos</td>
+                    <td class="celda1">FROM productos;</td>
+                </tr>
+                <tr>
+                    <td class="celda2">INSERT INTO tabla</td>
+                    <td class="celda2">Inserta registros en una tabla</td>
+                    <td class="celda2">INSERT INTO empleados (nombre, salario) VALUES ('Juan', 5000);</td>
+                </tr>
+                <tr>
+                    <td class="celda1">UPDATE tabla</td>
+                    <td class="celda1">Actualiza registros en una tabla</td>
+                    <td class="celda1">UPDATE productos SET precio = 10 WHERE categoria = 'Electrónicos';</td>
+                </tr>
+                <tr>
+                    <td class="celda2">DELETE FROM tabla</td>
+                    <td class="celda2">Elimina registros de una tabla</td>
+                    <td class="celda2">DELETE FROM pedidos WHERE estado = 'Completado';</td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="esqueleto">
+            
+            <div class="desc_esq">
+                <h2><strong>ESQUELETO</strong></h2>
+                <p>El esqueleto básico de una sentencia SQL consta de varias partes esenciales:</p>
+                <p>
+                    1. SELECT: Especifica las columnas que se deben seleccionar.
+                </p>
+                <p>
+                    2. FROM: Indica la tabla de la cual se seleccionarán los datos.
+                </p>
+                <p>
+                    3. WHERE: Define condiciones para filtrar resultados (opcional).
+                </p>
+                <p>
+                    4. INSERT INTO: Agrega registros a una tabla.
+                </p>
+                <p>
+                    5. UPDATE: Modifica registros existentes en una tabla.
+                </p>
+                <p>
+                    6. DELETE FROM: Elimina registros de una tabla.
+                </p>
+            </div>
+
+            <div class="desc_esq">
+                <h3>Ejemplo de Esqueleto SQL</h3>
+                <p>A continuación, se muestra un esqueleto básico de un programa SQL que demuestra la estructura común de una consulta:</p>
+                <div class="ejemplo">
+                    <pre>
+            -- Comentario: Este es un ejemplo de un esqueleto SQL
+            
+            -- Seleccionar columnas específicas de una tabla
+            SELECT columna1, columna2
+            FROM nombre_de_la_tabla
+            
+            -- Opcional: Agregar condiciones para filtrar resultados
+            WHERE condicion;
+            
+            -- Otras operaciones SQL
+            -- INSERT INTO, UPDATE, DELETE, etc.
+                    </pre>
+                </div>
+            </div>
+        </div>
+    
+        <div class="aplicaciones">
+            <h2><strong>APLICACIONES PARA GESTIÓN DE BASES DE DATOS</strong></h2>
+            <p>Para trabajar con SQL y bases de datos, puedes utilizar una variedad de sistemas de gestión de bases de datos (DBMS). Algunos ejemplos incluyen:</p>
+            
+            <div class="apli_tabla">
+                <ul>
+                    <li>
+                        MySQL: Un DBMS de código abierto ampliamente utilizado.
+                    </li>
+                    <li>
+                        PostgreSQL: Un DBMS de código abierto con enfoque en características avanzadas.
+                    </li>
+                    <li>
+                        Microsoft SQL Server: Un DBMS comercial de Microsoft.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ultimo">
+            <div class="paradigma">
+                <h2><strong>PARADIGMA</strong></h2>
+                <p>SQL (Structured Query Language) es un lenguaje de programación diseñado para administrar bases de datos relacionales. No sigue un paradigma de programación tradicional, como la programación procedural u orientada a objetos. En su lugar, se centra en consultar y manipular datos en tablas y relaciones de bases de datos.</p>
+            </div>
+
+            <div class="ejemploprog">
+                <h2>Ejemplo de Consulta SQL</h2>
+                <p>A continuación, se muestra una consulta SQL que selecciona información de empleados de una tabla llamada "empleados" con comentarios explicativos:</p>
+                <div class="ejemplo">
+                    <pre>
+    -- Seleccionar todos los campos de la tabla "empleados"
+    -- donde el salario sea mayor que 5000 y el departamento sea "Ventas"
+            
+    SELECT *
+    FROM empleados
+    WHERE salario > 5000
+    AND departamento = 'Ventas';
+            
+    -- Esta consulta devuelve empleados con salarios superiores a 5000
+    -- y que trabajan en el departamento de Ventas.
+            
+    -- Puedes personalizar esta consulta para adaptarla a tus necesidades específicas.
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="botones">
+            <a href="Tarea9.html"><img src="imagenes/flechaizq.png" class="direccion"></a>
+            <a href="MenuTareas.html"><img src="imagenes/home.png" class="direccion"></a>
+            <a href="Tarea1.html"><img src="imagenes/flechadere.png" class="direccion"></a>
+        </div>
+    </div>
+</body>
+</html>
+

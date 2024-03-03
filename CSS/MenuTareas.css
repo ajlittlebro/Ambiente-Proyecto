@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+}
+h1{
+    text-align: center;
+    color: rgb(208, 233, 255);
+}
+
+body{
+    background-color: black;
+    min-height: 100%;
+}
+
+.principal{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 90px;
+}
+
+.secundario{
+    background-color: black;
+    height: 100%;
+    display: grid;
+    margin: 0%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columna1{
+    background-color: black;
+    text-align: center;
+    margin: 0%;
+}
+
+.columna2{
+    background-color: black;
+    text-align: center;
+    margin: 0%;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+
+.div1{
+    background-color: black;
+    height: 120px;
+    width: 400px;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid rgb(203, 34, 255);
+    border-radius: 25px;
+    font-size: 30px;
+    color: rgb(204, 255, 255);
+    transition: box-shadow 0.3s ease;
+}
+
+.div2{
+    background-color: black;
+    height: 120px;
+    width: 400px;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid rgb(203, 34, 255);
+    border-radius: 25px;
+    font-size: 30px;
+    color: rgb(204, 255, 255);
+    transition: box-shadow 0.3s ease;
+}
+
+.div1 p, .div2 p{
+    display: none;
+}
+
+.tercero {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    bottom: 0%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.botones {
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    bottom: 0%;
+}
+
+.div1:hover p, .div2:hover p{
+    display: block;
+}
+
+img:hover{
+    height: 60px;
+    width: 60px;
+}
+
+.div1:hover{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(110, 14, 221));
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(183, 2, 255);
+    font-size: large;
+    box-shadow: 0 0 50px 20px rgba(183, 0, 255, 0.4);
+}
+
+.div2:hover{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(110, 14, 221));
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(183, 2, 255);
+    font-size: large;
+    box-shadow: 0 0 50px 20px rgba(183, 0, 255, 0.4);
+}

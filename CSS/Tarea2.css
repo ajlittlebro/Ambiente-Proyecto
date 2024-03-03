@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    height: 100%;
+    background: linear-gradient(to bottom, #ccccff 0%, #18b9b9 100%);
+}
+
+nav{
+    width: 1200px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu > li:hover{
+    background-color: black;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.submenu li:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+.submenu li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+}
+
+.submenu li a:hover {
+    color: aquamarine;
+}
+
+h2,h1{
+    text-align: center;
+}
+
+.principal{
+    height: auto;
+    width: 1200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    padding: 15px;
+    list-style-position: inside;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul{
+    padding: 10px;
+    text-align: justify;
+}
+
+li{
+    padding-left: 10px;
+}
+.concepto1{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    height: auto;
+    padding: 17px;
+    display: flex;
+}
+
+.definicion1{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: fit-content;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 15px;
+    width: 70%;
+}
+.imagen1{
+    height: auto;
+    width: calc(100%);
+    border: 1px solid#333;
+    border-radius: 20px;
+}
+.concepto2{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.definicion2{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: justify;
+    padding: 15px;
+    display: inline-flex;
+    margin-right: 10px;
+}
+.imagen2{
+    height: auto;
+    width: calc(100%);
+    border: 1px solid #333;
+    border-radius: 20px; 
+    margin: 10px;
+}
+.concepto3{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.definicion3{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: justify;
+    padding: 15px;
+    display: inline-block;
+}
+.definicion3_1{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: justify;
+    display: inline-flex;
+    padding: 10px;
+}
+.imagen3{
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(30%);
+    height: auto;
+    width: calc(100% - 10px);
+    margin: 10px;
+}
+.concepto4{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    text-align: justify;
+}
+.definicion4{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    width: calc(130%);
+    padding: 10px;
+}
+.imagen4{
+    height: auto;
+    width: calc(100%);
+    padding: 10px;
+}
+.imagenees{
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.botones{
+    align-items: flex-end;
+    text-align: center;
+    bottom: 0;
+    padding-top: 15px;
+}
+.direccion{
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.direccion:hover{
+    height: 60px;
+    width: 60px;
+    margin-left: 95px;
+    margin-right: 95px;
+}

@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: rgb(204, 255, 255);
+    text-align: center;
+}
+
+h2{
+    color: rgb(204, 255, 255);
+    text-align: center;
+}
+
+.principal{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.div1{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid aliceblue;
+    margin: 5px;
+    display: inline-block;
+    font-size: 38px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.div2{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid aliceblue;
+    margin: 5px;
+    margin-left: 30px;
+    display: inline-block;
+    font-size: 38px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.div1 p, .div2 p{
+    display: none;
+}
+
+.div1:hover{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 204));
+    color: rgb(204, 255, 255);
+    border: 2px solid rgb(153, 204, 255);
+    font-size: large;
+    box-shadow: 0 0 50px 20px rgb(22, 1, 255);
+}
+
+.div2:hover{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 204));
+    color: rgb(204, 255, 255);
+    border: 2px solid rgb(153, 204, 255);
+    font-size: large;
+    box-shadow: 0 0 50px 20px rgb(22, 1, 255);
+}
+
+.div1:hover p, .div2:hover p{
+    display: block;
+}
+
+.div3{
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    padding: 1px;
+    height: 65px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+img:hover{
+    height: 60px;
+    width: 60px;
+}
+
+.botones{
+    margin-left: 50px;
+    margin-right: 50px;
+    bottom: 0%;
+}

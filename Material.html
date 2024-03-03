@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea 9</title>
+    <link rel="stylesheet" href="CSS/Tareas.css">
+</head>
+<body>
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Personales.html">PERSONALES</a>
+                    <ul class="submenu">
+                        <li><a href="Biografia.html">Biografía</a></li>
+                        <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+                    </ul>
+                </li>
+                <li><a href="MenuTareas.html">TAREAS</a>
+                    <ul class="submenu">
+                        <li><a href="Tarea1.html">Tarea 1</a></li>
+                        <li><a href="Tarea2.html">Tarea 2</a></li>
+                        <li><a href="Tarea3.html">Tarea 3</a></li>
+                        <li><a href="Tarea4.html">Tarea 4</a></li>
+                        <li><a href="Tarea5.html">Tarea 5</a></li>
+                        <li><a href="Tarea6.html">Tarea 6</a></li>
+                        <li><a href="Tarea7.html">Tarea 7</a></li>
+                        <li><a href="Tarea8.html">Tarea 8</a></li>
+                        <li><a href="Tarea9.html">Tarea 9</a></li>
+                        <li><a href="Tarea10.html">Tarea 10</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Tarea 9</h2>
+    <h1>Lenguaje PHP</h1>
+
+    <div class="principal">
+        
+        <div class="simbologia">
+            <h2><strong>SIMBOLOGIA</strong></h2>
+            <div class="simb1">
+                <table>
+                    <tr>
+                        <td><strong>OPERADOR</strong></td>
+                        <td><strong>SIGNIFICADO</strong></td>
+                        <td><strong>OPERADOR</strong></td>
+                        <td><strong>SIGNIFICADO</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">+</td>
+                        <td class="celda2">Suma</td>
+                        <td class="celda1">=</td>
+                        <td class="celda2">Asignación</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">-</td>
+                        <td class="celda2">Resta</td>
+                        <td class="celda1">==</td>
+                        <td class="celda2">Igualdad</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">*</td>
+                        <td class="celda2">Multiplicación</td>
+                        <td class="celda1">!=</td>
+                        <td class="celda2">Diferente de</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">/</td>
+                        <td class="celda2">División real</td>
+                        <td class="celda1"><</td>
+                        <td class="celda2">Menor que</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">^</td>
+                        <td class="celda2">Exponenciación</td>
+                        <td class="celda1">></td>
+                        <td class="celda2">Mayor que</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">%</td>
+                        <td class="celda2">Módulo</td>
+                        <td class="celda1"><=</td>
+                        <td class="celda2">Menor o igual que</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">/</td>
+                        <td class="celda2">División entera</td>
+                        <td class="celda1">>=</td>
+                        <td class="celda2">Mayor o igual que</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="simb2">
+                <table>
+                    <tr>
+                        <th>Palabras Reservadas</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td class="celda1">if</td>
+                        <td class="celda1">Utilizado para definir una expresión condicional en PHP.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2">else</td>
+                        <td class="celda2">Especifica la acción a tomar si la expresión condicional es falsa.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">for</td>
+                        <td class="celda1">Usado para bucles e iteración sobre elementos en PHP.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2">while</td>
+                        <td class="celda2">Crea un bucle que continúa mientras cierta condición sea verdadera en PHP.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">function</td>
+                        <td class="celda1">Define una función en PHP.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2"class="celda2">return</td>
+                        <td class="celda2">Devuelve un valor desde una función en PHP.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda1">class</td>
+                        <td class="celda1">Usado para definir clases y objetos en PHP.</td>
+                    </tr>
+                    <tr>
+                        <td class="celda2">require</td>
+                        <td class="celda2">Utilizado para incluir archivos en PHP.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <div class="sintaxis">
+            <h2><strong>SINTAXIS</strong></h2>
+            <table>
+                <tr>
+                    <td><strong>ELEMENTO</strong></td>
+                    <td><strong>DESCRIPCION</strong></td>
+                    <td><strong>EJEMPLO</strong></td>
+                </tr>
+                <tr>
+                    <td class="celda2">Variables</td>
+                    <td class="celda2">Las variables en PHP se utilizan para almacenar datos. Se crean usando el operador de asignación `=`.</td>
+                    <td class="celda2">$x = 10;</td>
+                </tr>
+                <tr>
+                    <td class="celda1">Palabras Reservadas</td>
+                    <td class="celda1">PHP tiene palabras reservadas con significados específicos en el lenguaje.</td>
+                    <td class="celda1">if, else, for, while, function, return, class, require</td>
+                </tr>
+                <tr>
+                    <td class="celda2">Expresiones Condicionales</td>
+                    <td class="celda2">Se utilizan para definir acciones basadas en condiciones en PHP.</td>
+                    <td class="celda2">
+                        if ($x > 5) { <br>
+                        &emsp;echo "x es mayor que 5"; <br>
+                        } else { <br>
+                        &emsp;echo "x no es mayor que 5"; <br>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">Funciones</td>
+                    <td class="celda1">Las funciones son fundamentales en PHP y se definen de manera concisa.</td>
+                    <td class="celda1">
+                        function sumar($a, $b) { <br>
+                        &emsp;return $a + $b; <br>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda2">Clases y Objetos</td>
+                    <td class="celda2">PHP es un lenguaje orientado a objetos, por lo que se pueden definir clases y crear objetos a partir de ellas.</td>
+                    <td class="celda2">
+                        class MiClase { <br>
+                        &emsp;public $miVariable; <br>
+                        } <br>
+                        $objeto = new MiClase();
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">Inclusión de Archivos</td>
+                    <td class="celda1">Se pueden incluir archivos en PHP utilizando `require` para cargar código desde otros archivos.</td>
+                    <td class="celda1">
+                        require "archivo.php";
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+        
+        <div class="esqueleto">
+            
+            <div class="desc_esq">
+                <h2><strong>ESQUELETO</strong></h2>
+                <p>El esqueleto básico de un programa en PHP consta de varias partes esenciales:</p>
+                <p>
+                    1. Variables: Definición de variables para almacenar datos y resultados.
+                </p>
+                <p>
+                    2. Expresiones Condicionales: Utilización de "if," "else," y bucles "for" y "while" para tomar decisiones y repetir acciones en el programa.
+                </p>
+                <p>
+                    3. Funciones: Creación de funciones para encapsular bloques de código reutilizables.
+                </p>
+                <p>
+                    4. Clases y Objetos: Utilización de clases y objetos en programación orientada a objetos.
+                </p>
+                <p>
+                    5. Inclusión de Archivos: Carga de código desde otros archivos con `require`.
+                </p>
+            </div>
+    
+            <div class="ejemplo">
+                <h3>Ejemplo</h3>
+                // Variables <br>
+                $x = 10; <br>
+                $nombre = "Juan"; <br> <br>
+    
+                // Expresiones Condicionales <br>
+                if ($x > 5) { <br>
+                &emsp;echo "x es mayor que 5"; <br>
+                } else { <br>
+                &emsp;echo "x no es mayor que 5"; <br>
+                } <br> <br>
+    
+                // Funciones <br>
+                function sumar($a, $b) { <br>
+                &emsp;return $a + $b; <br>
+                } <br> <br>
+    
+                // Clases y Objetos <br>
+                class MiClase { <br>
+                &emsp;public $miVariable; <br>
+                } <br>
+                $objeto = new MiClase(); <br> <br>
+    
+                // Inclusión de Archivos <br>
+                require "archivo.php"; <br>
+            </div>
+        </div>
+    
+        <div class="aplicaciones">
+            <h2><strong>APLICACIONES PARA EDITAR Y EJECUTAR PHP</strong></h2>
+            <div class="apli_tabla">
+                <p>Para editar y ejecutar programas en PHP, puedes utilizar una variedad de entornos de desarrollo y herramientas. Algunos ejemplos incluyen:</p>
+            
+                <ul>
+                    <li>
+                        Visual Studio Code: Un editor de código con extensiones para PHP que facilitan el desarrollo.
+                    </li>
+                    <li>
+                        PhpStorm: Un entorno de desarrollo integrado (IDE) específico para PHP con características avanzadas.
+                    </li>
+                    <li>
+                        XAMPP: Un paquete que incluye Apache, MySQL, PHP y Perl, que te permite configurar un servidor web local para desarrollar y probar aplicaciones PHP.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ultimo">
+
+            <div class="paradigma">
+                <h2><strong>PARADIGMA</strong></h2>
+                <p>PHP es un lenguaje de programación que se utiliza principalmente para el desarrollo web, y admite la programación imperativa y orientada a objetos. Puedes escribir código PHP de manera procedural o aprovechar su capacidad orientada a objetos según tus necesidades.</p>
+                
+                
+            </div>
+
+            <div class="ejemploprog">
+                <h2>Ejemplo</h2>
+                <p>A continuación, se muestra un ejemplo de una función en PHP que calcula el factorial de un número utilizando la recursión:</p>
+                <div class="ejemplo">
+                    <pre>
+// Función para calcular el factorial de un número
+function factorial($n) {
+    if ($n == 0) {
+        return 1;
+    } else {
+        return $n * factorial($n - 1);
+    }
+}
+                        
+// Llamada a la función para calcular el factorial de 5
+$resultado = factorial(5);
+echo "El factorial de 5 es $resultado";
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="botones">
+            <a href="Tarea8.html"><img src="imagenes/flechaizq.png" class="direccion"></a>
+            <a href="MenuTareas.html"><img src="imagenes/home.png" class="direccion"></a>
+            <a href="Tarea10.html"><img src="imagenes/flechadere.png" class="direccion"></a>
+        </div>
+    </div>
+</body>
+</html>
