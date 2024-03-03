@@ -17,3 +17,100 @@
         left: -112px;
     }
 }
+
+@media (min-width: 100px) {
+    .submenu.left {
+        left: -112px;
+    }
+}
+
+/* Estilos personalizados para las imágenes */
+img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos personalizados para los títulos */
+h2 {
+    font-size: 2rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Peso de la fuente */
+    margin-top: 1.5rem;
+    /* Margen superior */
+    margin-bottom: 1rem;
+    /* Margen inferior */
+    color: #333;
+    /* Color del texto */
+}
+
+h3 {
+    font-size: 1.5rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Peso de la fuente */
+    margin-top: 1.25rem;
+    /* Margen superior */
+    margin-bottom: 0.75rem;
+    /* Margen inferior */
+    color: #555;
+    /* Color del texto */
+}
+/* Estilos personalizados para el título principal */
+h1 {
+    font-size: 4rem; /* Tamaño del título */
+    font-weight: bold; /* Peso de la fuente */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espacio alrededor del texto */
+    background-color: #333; /* Fondo oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 20px; /* Margen inferior */
+    margin-top: 20px;
+}
+
+/* Estilos personalizados para los párrafos */
+p {
+    margin-bottom: 1rem;
+    /* Margen inferior */
+    line-height: 1.5;
+    /* Altura de línea */
+    color: #444;
+    /* Color del texto */
+}
+
+p, div ul, div li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #444;
+    background-color: #f9f9f9; /* Fondo destacable */
+    padding: 15px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos personalizados para las listas */
+div ul {
+    margin-bottom: 1rem;
+    /* Margen inferior */
+    padding-left: 1.5rem;
+    /* Relleno izquierdo */
+    color: #444;
+    /* Color del texto */
+}
+
+div ul li {
+    margin-bottom: 0.5rem;
+    /* Margen inferior */
+}
