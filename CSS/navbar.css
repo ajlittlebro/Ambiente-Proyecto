@@ -39,7 +39,25 @@ img {
 img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
 
+.scroll-to-top.show {
+    display: block;
+}
 /* Estilos personalizados para los títulos */
 h2 {
     font-size: 2rem;

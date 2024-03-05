@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="./CSS/navbar.css">
 </head>
 
-<body class="font-sans bg-gradient-to-b from-green-200 via-green-300 to-blue-200 text-base">
-    <header class="bg-green-500 py-6">
-        <nav class="container mx-auto flex justify-between items-center">
+<body class="font-sans bg-gradient-to-b from-red-200 via-yellow-300 to-green-200 text-base">
+    <header class="bg-green-500 py-6 fixed w-full top-0 z-50" id="navbar">
+        <nav class="container mx-auto flex justify-between items-center ">
             <a href="Index.html" class="text-2xl font-bold text-white">Ambiente y Sustentabilidad</a>
             <ul class="flex">
                 <li class="mr-6 relative">
                     <a href="#" class="text-white hover:text-yellow-300">Unidad 1</a>
                     <ul
-                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg ">
                         <li><a href="Cap1.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 1</a></li>
                         <li><a href="Cap2.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 2</a></li>
                         <li><a href="Cap3.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 3</a></li>
@@ -26,7 +26,7 @@
                 <li class="mr-6 relative">
                     <a href="#" class="text-white hover:text-yellow-300">Unidad 2</a>
                     <ul
-                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg ">
                         <li><a href="Cap4.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 4</a></li>
                         <li><a href="Cap5.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 5</a></li>
                         <li><a href="Cap6.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 6</a></li>
@@ -46,39 +46,123 @@
         </nav>
     </header>
 
-    <main class="container mx-auto mt-8">
-        <h1 class="text-3xl font-bold text-center mb-8">UANL - AMBIENTE Y SUSTENTABILIDAD - FIME</h1>
-        <div class="principal bg-opacity-10 bg-white p-10 mx-4 md:mx-40 rounded-lg">
-            <div
-                class="recuadro bg-opacity-10 bg-white p-8 flex flex-wrap md:flex-no-wrap justify-center items-center rounded-lg">
-                <div class="imagenes text-center mb-4 md:mb-0">
-                    <img src="imagenes/rubik2.jpg" alt="Rubik" class="w-48 rounded-lg">
-                </div>
-                <div class="texto md:ml-8 text-justify">
-                    <p class="text-xl font-bold">Equipo #4</p>
-                    <p class="font-semibold">Integrantes</p>
-                    <ul class="list-disc ml-6">
-                        <li>Alain Josué Tolentino Ibarra</li>
-                        <li>Jesus Gael Acevedo Montemayor</li>
-                        <li>Eric Tadeo Hughes Samano</li>
-                        <li>Melany Alondra Lopez Bezanilla</li>
-                        <li>Luz Evangelina Quijas Saldaña</li>
-                        <li>Christian Santos Cruz</li>
-                    </ul>
-                </div>
+    <main class="container mx-auto mt-8 pt-20">
+        <div class="flex justify-between items-center">
+            <div class="w-24 md:w-auto mb-4 md:mb-0 md:mr-4"> 
+                <a href="https://www.uanl.mx/"><img src="imagenes/unal.svg" alt="UANL Logo" class="w-full h-auto md:w-40 md:h-40 rounded-lg"></a>
             </div>
-
-            <div class="botones flex justify-center items-center mt-8">
-                <a href="Unidad1.html" class="mr-4"><img src="imagenes/flechaizq.png" alt="Flecha izquierda"
-                        class="direccion w-12 h-12"></a>
-                <a href="Index.html" class="mx-4"><img src="imagenes/home.png" alt="Inicio"
-                        class="direccion w-12 h-12"></a>
-                <a href="Unidad2.html" class="ml-4"><img src="imagenes/flechadere.png" alt="Flecha derecha"
-                        class="direccion w-12 h-12"></a>
+          
+            <h1 class="text-xl  sm:text-xl md:text-2xl lg:text-3xl font-bold text-center mb-8">UANL - FIME <br>AMBIENTE Y SUSTENTABILIDAD </h1>
+        
+            <div class="w-24 md:w-auto md:ml-4"> 
+                <a href="https://www.fime.uanl.mx/"><img src="imagenes/fime-logo-1.png" alt="FIME Logo" class=" w-full h-auto md:w-40 md:h-40 rounded-lg"></a>
             </div>
         </div>
-    </main>
+        
+        
+        <div class="principal bg-opacity-10 bg-white p-10 mx-4 md:mx-40 rounded-lg">
+            <div class="recuadro bg-opacity-10 bg-white p-8 flex flex-wrap md:flex-no-wrap justify-center items-center rounded-lg">
+                <div class="texto md:ml-8 text-center">
+                    <p class="text-xl font-bold">Equipo #4</p>
+                    <p class="font-semibold">Integrantes</p>
+                    <table class="table-auto border-collapse border border-gray-400 bg-gray-100">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-400 px-4 py-2">Nombre</th>
+                                <th class="border border-gray-400 px-4 py-2">Matrícula</th>
+                                <th class="border border-gray-400 px-4 py-2">Carrera</th>
+                                <th class="border border-gray-400 px-4 py-2">Semestre</th>
+                                <th class="border border-gray-400 px-4 py-2">Plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-400 px-4 py-2">Alain Josué Tolentino Ibarra</td>
+                                <td class="border border-gray-400 px-4 py-2">2131959</td>
+                                <td class="border border-gray-400 px-4 py-2">ITS</td>
+                                <td class="border border-gray-400 px-4 py-2">5to</td>
+                                <td class="border border-gray-400 px-4 py-2">401</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-400 px-4 py-2">Jesus Gael Acevedo Montemayor</td>
+                                <td class="border border-gray-400 px-4 py-2">2071308</td>
+                                <td class="border border-gray-400 px-4 py-2">IMA</td>
+                                <td class="border border-gray-400 px-4 py-2">4to</td>
+                                <td class="border border-gray-400 px-4 py-2">401</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-400 px-4 py-2">Eric Tadeo Hughes Samano</td>
+                                <td class="border border-gray-400 px-4 py-2">2046417</td>
+                                <td class="border border-gray-400 px-4 py-2">IMA</td>
+                                <td class="border border-gray-400 px-4 py-2">4to</td>
+                                <td class="border border-gray-400 px-4 py-2">401</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-400 px-4 py-2">Melany Alondra Lopez Bezanilla</td>
+                                <td class="border border-gray-400 px-4 py-2">2052883</td>
+                                <td class="border border-gray-400 px-4 py-2">IAS</td>
+                                <td class="border border-gray-400 px-4 py-2">4to</td>
+                                <td class="border border-gray-400 px-4 py-2">401</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-400 px-4 py-2">Luz Evangelina Quijas Saldaña</td>
+                                <td class="border border-gray-400 px-4 py-2">2132150</td>
+                                <td class="border border-gray-400 px-4 py-2">ITS</td>
+                                <td class="border border-gray-400 px-4 py-2">5to</td>
+                                <td class="border border-gray-400 px-4 py-2">401</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-400 px-4 py-2">Christian Santos Cruz</td>
+                                <td class="border border-gray-400 px-4 py-2">2131957</td>
+                                <td class="border border-gray-400 px-4 py-2">ITS</td>
+                                <td class="border border-gray-400 px-4 py-2">5to</td>
+                                <td class="border border-gray-400 px-4 py-2">401</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
+            <div class="flex flex-col items-center mt-8">
+                <div class="botones flex justify-center items-center flex-wrap">
+                    <a href="Index.html" class="mr-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">Inicio</a>
+                    <a href="Cap1.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">1</a>
+                    <a href="Cap2.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">2</a>
+                    <a href="Cap3.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">3</a>
+                    <a href="Cap4.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">4</a>
+                    <a href="Cap5.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">5</a>
+                    <a href="Cap6.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">6</a>
+                    <a href="Cap7.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">7</a>
+                    <a href="Cap8.html" class="mx-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">8</a>
+                    <a href="Material.html" class="mr-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">Material</a>
+                    <a href="conclusiones.html" class="ml-4 mb-2 md:mb-0 hover:bg-gray-200 px-2 py-1 rounded">Conclusiones</a>
+                </div>
+                <div class="text-xs text-gray-600 mt-2 mb-5">Capítulos</div>
+            </div>
+     
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                Universidad Autónoma de Nuevo León
+            </div>
+            <div class="mb-4">
+                Facultad de Ingeniería Mecánica y Eléctrica
+            </div>
+            <div class="mb-4">
+                Pedro de Alba SN, Niños Héroes, Ciudad Universitaria, 66455 San Nicolás de los Garza, N.L.
+            </div>
+            <div class="mb-4">
+                Ambiente y Sustentabilidad - Equipo 4
+            </div>
+            <div>
+                Derechos reservados &copy; 2024
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-to-top" id="scrollToTop">&#8593;</div>
+    
     <script src="index.js">
 
     </script>
