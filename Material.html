@@ -1,305 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Tarea 9</title>
-    <link rel="stylesheet" href="CSS/Tareas.css">
+    <title>Material de apoyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <style>
+        /* Estilos personalizados para el contenedor de los videos */
+        .video-container {
+            background-color: #ffffff;
+            /* Fondo blanco */
+            padding: 20px;
+            /* Espaciado interno */
+            border-radius: 8px;
+            /* Bordes redondeados */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+        }
+
+        /* Estilos personalizados para los títulos de los videos */
+        .video-title {
+            background-color: #4b5563;
+            /* Fondo gris azulado */
+            color: #ffffff;
+            /* Texto blanco */
+            padding: 10px;
+            /* Espaciado interno */
+            border-top-left-radius: 8px;
+            /* Borde redondeado superior izquierdo */
+            border-top-right-radius: 8px;
+            /* Borde redondeado superior derecho */
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Personales.html">PERSONALES</a>
-                    <ul class="submenu">
-                        <li><a href="Biografia.html">Biografía</a></li>
-                        <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+
+<body class="font-sans bg-gradient-to-b from-gray-600 to-gray-900">
+    <header class="bg-green-500 py-6 fixed w-full top-0 z-50" id="navbar">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="Index.html" class="text-2xl font-bold text-white">Ambiente y Sustentabilidad</a>
+            <ul class="flex">
+                <li class="mr-6 relative">
+                    <a href="#" class="text-white hover:text-yellow-300">Unidad 1</a>
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                        <li><a href="Cap1.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 1</a></li>
+                        <li><a href="Cap2.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 2</a></li>
+                        <li><a href="Cap3.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 3</a></li>
                     </ul>
                 </li>
-                <li><a href="MenuTareas.html">TAREAS</a>
-                    <ul class="submenu">
-                        <li><a href="Tarea1.html">Tarea 1</a></li>
-                        <li><a href="Tarea2.html">Tarea 2</a></li>
-                        <li><a href="Tarea3.html">Tarea 3</a></li>
-                        <li><a href="Tarea4.html">Tarea 4</a></li>
-                        <li><a href="Tarea5.html">Tarea 5</a></li>
-                        <li><a href="Tarea6.html">Tarea 6</a></li>
-                        <li><a href="Tarea7.html">Tarea 7</a></li>
-                        <li><a href="Tarea8.html">Tarea 8</a></li>
-                        <li><a href="Tarea9.html">Tarea 9</a></li>
-                        <li><a href="Tarea10.html">Tarea 10</a></li>
+                <li class="mr-6 relative">
+                    <a href="#" class="text-white hover:text-yellow-300">Unidad 2</a>
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                        <li><a href="Cap4.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 4</a></li>
+                        <li><a href="Cap5.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 5</a></li>
+                        <li><a href="Cap6.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 6</a></li>
+                        <li><a href="Cap7.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 7</a></li>
+                        <li><a href="Cap8.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 8</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <a href="#" class="text-white hover:text-yellow-300">Extra</a>
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg left">
+                        <li><a href="Material.html" class="block px-4 py-2 hover:bg-gray-200">Material de Apoyo</a></li>
+                        <li><a href="conclusiones.html" class="block px-4 py-2 hover:bg-gray-200">Conclusiones</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <h2>Tarea 9</h2>
-    <h1>Lenguaje PHP</h1>
+    <div class="container mx-auto mt-20 pt-5 ">
 
-    <div class="principal">
-        
-        <div class="simbologia">
-            <h2><strong>SIMBOLOGIA</strong></h2>
-            <div class="simb1">
-                <table>
-                    <tr>
-                        <td><strong>OPERADOR</strong></td>
-                        <td><strong>SIGNIFICADO</strong></td>
-                        <td><strong>OPERADOR</strong></td>
-                        <td><strong>SIGNIFICADO</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">+</td>
-                        <td class="celda2">Suma</td>
-                        <td class="celda1">=</td>
-                        <td class="celda2">Asignación</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">-</td>
-                        <td class="celda2">Resta</td>
-                        <td class="celda1">==</td>
-                        <td class="celda2">Igualdad</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">*</td>
-                        <td class="celda2">Multiplicación</td>
-                        <td class="celda1">!=</td>
-                        <td class="celda2">Diferente de</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">/</td>
-                        <td class="celda2">División real</td>
-                        <td class="celda1"><</td>
-                        <td class="celda2">Menor que</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">^</td>
-                        <td class="celda2">Exponenciación</td>
-                        <td class="celda1">></td>
-                        <td class="celda2">Mayor que</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">%</td>
-                        <td class="celda2">Módulo</td>
-                        <td class="celda1"><=</td>
-                        <td class="celda2">Menor o igual que</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">/</td>
-                        <td class="celda2">División entera</td>
-                        <td class="celda1">>=</td>
-                        <td class="celda2">Mayor o igual que</td>
-                    </tr>
-                </table>
-            </div>
-    
-            <div class="simb2">
-                <table>
-                    <tr>
-                        <th>Palabras Reservadas</th>
-                        <th>Descripción</th>
-                    </tr>
-                    <tr>
-                        <td class="celda1">if</td>
-                        <td class="celda1">Utilizado para definir una expresión condicional en PHP.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda2">else</td>
-                        <td class="celda2">Especifica la acción a tomar si la expresión condicional es falsa.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">for</td>
-                        <td class="celda1">Usado para bucles e iteración sobre elementos en PHP.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda2">while</td>
-                        <td class="celda2">Crea un bucle que continúa mientras cierta condición sea verdadera en PHP.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">function</td>
-                        <td class="celda1">Define una función en PHP.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda2"class="celda2">return</td>
-                        <td class="celda2">Devuelve un valor desde una función en PHP.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda1">class</td>
-                        <td class="celda1">Usado para definir clases y objetos en PHP.</td>
-                    </tr>
-                    <tr>
-                        <td class="celda2">require</td>
-                        <td class="celda2">Utilizado para incluir archivos en PHP.</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    
-        <div class="sintaxis">
-            <h2><strong>SINTAXIS</strong></h2>
-            <table>
-                <tr>
-                    <td><strong>ELEMENTO</strong></td>
-                    <td><strong>DESCRIPCION</strong></td>
-                    <td><strong>EJEMPLO</strong></td>
-                </tr>
-                <tr>
-                    <td class="celda2">Variables</td>
-                    <td class="celda2">Las variables en PHP se utilizan para almacenar datos. Se crean usando el operador de asignación `=`.</td>
-                    <td class="celda2">$x = 10;</td>
-                </tr>
-                <tr>
-                    <td class="celda1">Palabras Reservadas</td>
-                    <td class="celda1">PHP tiene palabras reservadas con significados específicos en el lenguaje.</td>
-                    <td class="celda1">if, else, for, while, function, return, class, require</td>
-                </tr>
-                <tr>
-                    <td class="celda2">Expresiones Condicionales</td>
-                    <td class="celda2">Se utilizan para definir acciones basadas en condiciones en PHP.</td>
-                    <td class="celda2">
-                        if ($x > 5) { <br>
-                        &emsp;echo "x es mayor que 5"; <br>
-                        } else { <br>
-                        &emsp;echo "x no es mayor que 5"; <br>
-                        }
-                    </td>
-                </tr>
-                <tr>
-                    <td class="celda1">Funciones</td>
-                    <td class="celda1">Las funciones son fundamentales en PHP y se definen de manera concisa.</td>
-                    <td class="celda1">
-                        function sumar($a, $b) { <br>
-                        &emsp;return $a + $b; <br>
-                        }
-                    </td>
-                </tr>
-                <tr>
-                    <td class="celda2">Clases y Objetos</td>
-                    <td class="celda2">PHP es un lenguaje orientado a objetos, por lo que se pueden definir clases y crear objetos a partir de ellas.</td>
-                    <td class="celda2">
-                        class MiClase { <br>
-                        &emsp;public $miVariable; <br>
-                        } <br>
-                        $objeto = new MiClase();
-                    </td>
-                </tr>
-                <tr>
-                    <td class="celda1">Inclusión de Archivos</td>
-                    <td class="celda1">Se pueden incluir archivos en PHP utilizando `require` para cargar código desde otros archivos.</td>
-                    <td class="celda1">
-                        require "archivo.php";
-                    </td>
-                </tr>
-            </table>
-        </div>
-    
-        
-        <div class="esqueleto">
-            
-            <div class="desc_esq">
-                <h2><strong>ESQUELETO</strong></h2>
-                <p>El esqueleto básico de un programa en PHP consta de varias partes esenciales:</p>
-                <p>
-                    1. Variables: Definición de variables para almacenar datos y resultados.
-                </p>
-                <p>
-                    2. Expresiones Condicionales: Utilización de "if," "else," y bucles "for" y "while" para tomar decisiones y repetir acciones en el programa.
-                </p>
-                <p>
-                    3. Funciones: Creación de funciones para encapsular bloques de código reutilizables.
-                </p>
-                <p>
-                    4. Clases y Objetos: Utilización de clases y objetos en programación orientada a objetos.
-                </p>
-                <p>
-                    5. Inclusión de Archivos: Carga de código desde otros archivos con `require`.
-                </p>
-            </div>
-    
-            <div class="ejemplo">
-                <h3>Ejemplo</h3>
-                // Variables <br>
-                $x = 10; <br>
-                $nombre = "Juan"; <br> <br>
-    
-                // Expresiones Condicionales <br>
-                if ($x > 5) { <br>
-                &emsp;echo "x es mayor que 5"; <br>
-                } else { <br>
-                &emsp;echo "x no es mayor que 5"; <br>
-                } <br> <br>
-    
-                // Funciones <br>
-                function sumar($a, $b) { <br>
-                &emsp;return $a + $b; <br>
-                } <br> <br>
-    
-                // Clases y Objetos <br>
-                class MiClase { <br>
-                &emsp;public $miVariable; <br>
-                } <br>
-                $objeto = new MiClase(); <br> <br>
-    
-                // Inclusión de Archivos <br>
-                require "archivo.php"; <br>
-            </div>
-        </div>
-    
-        <div class="aplicaciones">
-            <h2><strong>APLICACIONES PARA EDITAR Y EJECUTAR PHP</strong></h2>
-            <div class="apli_tabla">
-                <p>Para editar y ejecutar programas en PHP, puedes utilizar una variedad de entornos de desarrollo y herramientas. Algunos ejemplos incluyen:</p>
-            
-                <ul>
-                    <li>
-                        Visual Studio Code: Un editor de código con extensiones para PHP que facilitan el desarrollo.
-                    </li>
-                    <li>
-                        PhpStorm: Un entorno de desarrollo integrado (IDE) específico para PHP con características avanzadas.
-                    </li>
-                    <li>
-                        XAMPP: Un paquete que incluye Apache, MySQL, PHP y Perl, que te permite configurar un servidor web local para desarrollar y probar aplicaciones PHP.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="ultimo">
-
-            <div class="paradigma">
-                <h2><strong>PARADIGMA</strong></h2>
-                <p>PHP es un lenguaje de programación que se utiliza principalmente para el desarrollo web, y admite la programación imperativa y orientada a objetos. Puedes escribir código PHP de manera procedural o aprovechar su capacidad orientada a objetos según tus necesidades.</p>
-                
-                
+        <h1 class="text-center text-4xl mb-8 pt-10 ">MATERIAL DE APOYO</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="video-container">
+                <h2 class="video-title text-2xl font-semibold mb-4">Flujo de Energía y Flujos Biogeoquímicos</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/9N134jd-F3A?si=noNJCeYpbqveHCf7"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
 
-            <div class="ejemploprog">
-                <h2>Ejemplo</h2>
-                <p>A continuación, se muestra un ejemplo de una función en PHP que calcula el factorial de un número utilizando la recursión:</p>
-                <div class="ejemplo">
-                    <pre>
-// Función para calcular el factorial de un número
-function factorial($n) {
-    if ($n == 0) {
-        return 1;
-    } else {
-        return $n * factorial($n - 1);
-    }
-}
-                        
-// Llamada a la función para calcular el factorial de 5
-$resultado = factorial(5);
-echo "El factorial de 5 es $resultado";
-                    </pre>
+
+            <div class="video-container">
+                <h2 class="video-title text-2xl font-semibold mb-4">La Agenda 21</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/WWnwNO_0heQ?si=4wmrWXMU-ihUXF6r"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <h2 class="video-title text-2xl font-semibold mb-4">La Cumbre del Milenio</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/gEejcB1I_Tk?si=Dm2Ii7o2HZz8nRrF"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <div class="video-container">
+                <h2 class="video-title text-2xl font-semibold mb-4">Desarrollo Sustentable</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/PRWCcQt-9tE?si=0yagCWf7Gjg_4W1S"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <h2 class="video-title text-2xl font-semibold mb-4">Educación Ambiental</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/6TdvpIjzz4w?si=GcHAGSSlRrDOe81B"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-
-        <div class="botones">
-            <a href="Tarea8.html"><img src="imagenes/flechaizq.png" class="direccion"></a>
-            <a href="MenuTareas.html"><img src="imagenes/home.png" class="direccion"></a>
-            <a href="Tarea10.html"><img src="imagenes/flechadere.png" class="direccion"></a>
-        </div>
     </div>
+
+    <div class="flex justify-between">
+        <a href="Cap1.html"><img src="imagenes/flechaizq.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Flecha izquierda"></a>
+        <a href="Index.html"><img src="imagenes/home.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Botón de inicio"></a>
+        <a href="Cap3.html"><img src="imagenes/flechadere.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Flecha derecha"></a>
+    </div>
+
+    <script src="index.js"></script>
 </body>
+
 </html>

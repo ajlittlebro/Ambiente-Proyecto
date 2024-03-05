@@ -1,88 +1,156 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Capitulo 7</title>
-    <link rel="stylesheet" href="CSS/Tareas.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <style>
+        /* Estilos personalizados para las imágenes */
+        .imagen2 {
+            width: 100%;
+            max-width: 400px;
+            /* Ajusta el tamaño máximo según tus preferencias */
+            margin: 0 auto;
+            /* Centra la imagen horizontalmente */
+            display: block;
+            /* Asegura que la imagen esté centrada */
+            border-radius: 8px;
+            /* Agrega bordes redondeados */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Agrega sombra suave */
+            margin-bottom: 20px;
+            /* Espacio entre imágenes */
+        }
+
+        .imagen4 {
+            width: 100%;
+            max-width: 600px;
+            /* Ajusta el tamaño máximo según tus preferencias */
+            margin: 0 auto;
+            /* Centra la imagen horizontalmente */
+            display: block;
+            /* Asegura que la imagen esté centrada */
+            border-radius: 8px;
+            /* Agrega bordes redondeados */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Agrega sombra suave */
+            margin-bottom: 20px;
+            /* Espacio entre imágenes */
+        }
+    </style>
 </head>
-<body>
-   <header>
-        <nav class="navegacion">
-            <ul class="menu">
-                
-                <li><a href="Unidad1.html">Unidad 1</a>
-                    <ul class="submenu">
-                        <li><a href="Tarea1.html">Capítulo 1</a></li>
-                        <li><a href="Tarea2.html">Capítulo 2</a></li>
-                        <li><a href="Tarea3.html">Capítulo 3</a></li>
+
+<body class="font-sans bg-gradient-to-b from-green-600 to-green-900">
+    <header class="bg-green-500 py-6 fixed w-full top-0 z-50" id="navbar">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="Index.html" class="text-2xl font-bold text-white">Ambiente y Sustentabilidad</a>
+            <ul class="flex">
+                <li class="mr-6 relative">
+                    <a href="#" class="text-white hover:text-yellow-300">Unidad 1</a>
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                        <li><a href="Cap1.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 1</a></li>
+                        <li><a href="Cap2.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 2</a></li>
+                        <li><a href="Cap3.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 3</a></li>
                     </ul>
                 </li>
-                <li><a href="Unidad2.html">Unidad 2</a>
-                    <ul class="submenu">
-                        <li><a href="Tarea1.html">Capítulo 4</a></li>
-                        <li><a href="Tarea2.html">Capítulo 5</a></li>
-                        <li><a href="Tarea3.html">Capítulo 6</a></li>
-                        <li><a href="Tarea4.html">Capítulo 7</a></li>
-                        <li><a href="Tarea4.html">Capítulo 8</a></li>
+                <li class="mr-6 relative">
+                    <a href="#" class="text-white hover:text-yellow-300">Unidad 2</a>
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                        <li><a href="Cap4.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 4</a></li>
+                        <li><a href="Cap5.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 5</a></li>
+                        <li><a href="Cap6.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 6</a></li>
+                        <li><a href="Cap7.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 7</a></li>
+                        <li><a href="Cap8.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 8</a></li>
                     </ul>
                 </li>
-                  <li><a href="MenuTareas.html">Extra</a>
-                    <ul class="submenu">
-                        <li><a href="Tarea1.html">Material de Apoyo</a></li>
-                        <li><a href="Tarea2.html">Conclusiones</a></li>
+                <li class="relative">
+                    <a href="#" class="text-white hover:text-yellow-300">Extra</a>
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg left">
+                        <li><a href="Material.html" class="block px-4 py-2 hover:bg-gray-200">Material de Apoyo</a></li>
+                        <li><a href="conclusiones.html" class="block px-4 py-2 hover:bg-gray-200">Conclusiones</a></li>
                     </ul>
                 </li>
             </ul>
-          
         </nav>
     </header>
 
-    <h2>Capitulo 7</h2>
-    <h1>Participación social e institucional en el desarrollo sustentable</h1>
+    <div class="container mx-auto mt-20 pt-5">
+        <h1 class="text-center text-4xl mb-8 pt-10">CAPÍTULO 7. PARTICIPACIÓN SOCIAL E INSTITUCIONAL EN EL DESARROLLO
+            SUSTENTABLE</h1>
 
 
-        <div class="ultimo">
-
-            <div class="paradigma">
-                <h2><strong>Participación institucional</strong></h2>
-                <p>La participación social fue determinante en la elaboración de la Ley General del Equilibrio Ecológico y la Protección al Ambiente, y en este ordenamiento legal se contempla con amplitud la participación ciudadana en las políticas públicas sobre el medio ambiente.<br>
-                La Ley General del Equilibrio Ecológico, en el Título V, denominado participación social e información ambiental, establece que: "El gobierno federal deberá promover la participación corresponsable de la sociedad en la planeación, ejecución, evaluación y vigilancia de la política ambiental y de recursos naturales" (Artículo 157). Señala, así mismo, la obligación de la Secretaría de Medio Ambiente de integrar órganos de consulta en los que participen entidades y dependencias de la admi- nistración pública, instituciones académicas, organizaciones sociales y empresariales, que tendrán funciones de asesoría, evaluación y seguimiento en materia de política ambiental y podrán emitir las opiniones y observaciones que estimen pertinentes (Artículo 159).
-                <br>
-                <br>
-                </p> 
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-200 p-6 rounded-xl mb-12">
+                <div class="text-justify mb-8">
+                    <h2 class="text-center text-3xl mb-6">Participación institucional</h2>
+                    <p>
+                        La participación social fue determinante en la elaboración de la Ley General del Equilibrio
+                        Ecológico
+                        y la Protección al Ambiente, y en este ordenamiento legal se contempla con amplitud la
+                        participación
+                        ciudadana en las políticas públicas sobre el medio ambiente.<br>
+                        La Ley General del Equilibrio Ecológico, en el Título V, denominado participación social e
+                        información ambiental, establece que: "El gobierno federal deberá promover la participación
+                        corresponsable de la sociedad en la planeación, ejecución, evaluación y vigilancia de la
+                        política
+                        ambiental y de recursos naturales" (Artículo 157). Señala, así mismo, la obligación de la
+                        Secretaría
+                        de Medio Ambiente de integrar órganos de consulta en los que participen entidades y dependencias
+                        de
+                        la admi- nistración pública, instituciones académicas, organizaciones sociales y empresariales,
+                        que
+                        tendrán funciones de asesoría, evaluación y seguimiento en materia de política ambiental y
+                        podrán
+                        emitir las opiniones y observaciones que estimen pertinentes (Artículo 159).
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="imagenes/law.jpg" class="w-60" alt="Imagen de sistema abierto">
+                </div>
             </div>
-            <div class="ejemploprog">
-                
-                <div class="ejemplo">
-                     <img width="40%" text-align="center" src="imagenes/ley.jpg"> </div>
 
-         
+            <div class="bg-gray-200 p-6 rounded-xl mb-12">
+                <div class="text-justify mb-8">
+                    <h2 class="text-center text-3xl mb-6">Participación social</h2>
+                    <p>
+                        En el presente siglo es muy común que en los medios de comunicación aparezcan diversos grupos
+                        sociales, unas veces organizados y otras no, manifestándose en contra de proyectos de supuesto
+                        desarrollo económico y de impactos sociales significativos. A veces la presión social es tan
+                        fuerte
+                        que muchos proyectos se han visto frustrados y se han detenido grandes inversiones, limitando la
+                        creación de empleos y la derrama económica en las comunidades donde éstos pretendían
+                        desarrollarse.<br>
+                        Los resultados o avances de la participación social en las políticas públicas en México han
+                        provocado un proceso muy heterogéneo, debido a la gran diversidad de organizaciones involucradas
+                        (existen desde fundaciones y grupos de asistencia privada, hasta productores del sector social y
+                        cámaras empresariales, organizaciones no gubernamentales y asociaciones de profesionales). Otro
+                        factor, sin duda, es la gran diferencia geográfica y sectorial del país.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="imagenes/social.jpg" class="imagen2" alt="Imagen de radiación solar">
+                </div>
+            </div>
         </div>
-</div>
-           
-        <div class="ultimo">
-             <div class="ejemploprog">
-                
-                <div class="ejemplo">
-                     <img width="100%" src="imagenes/social.jpg"> </div>
-
-         
-        </div>
-            
-            <div class="paradigma">
-                <h2><strong>Participación social</strong></h2>
-                <p>En el presente siglo es muy común que en los medios de comunicación aparezcan diversos grupos sociales, unas veces organizados y otras no, manifestándose en contra de proyectos de supuesto desarrollo económico y de impactos sociales significativos. A veces la presión social es tan fuerte que muchos proyectos se han visto frustrados y se han detenido grandes inversiones, limitando la creación de empleos y la derrama económica en las comunidades donde éstos pretendían desarrollarse.<br>
-                Los resultados o avances de la participación social en las políticas públicas en México han provocado un proceso muy heterogéneo, debido a la gran diversidad de organizaciones involucradas (existen desde fundaciones y grupos de asistencia privada, hasta productores del sector social y cámaras empresariales, organizaciones no gubernamentales y asociaciones de profesionales). Otro factor, sin duda, es la gran diferencia geográfica y sectorial del país. 
-                </p> </div>
-</div>
-           
-
-        <div class="botones">
-            <a href="Cap6.html"><img src="imagenes/flechaizq.png" class="direccion"></a>
-            <a href="Index.html"><img src="imagenes/home.png" class="direccion"></a>
-            <a href="Cap8.html"><img src="imagenes/flechadere.png" class="direccion"></a>
-        </div>
-
     </div>
 
+    <div class="flex justify-between">
+        <a href="Cap1.html"><img src="imagenes/flechaizq.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Flecha izquierda"></a>
+        <a href="Index.html"><img src="imagenes/home.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Botón de inicio"></a>
+        <a href="Cap3.html"><img src="imagenes/flechadere.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Flecha derecha"></a>
+    </div>
+    <script src="index.js">
+
+    </script>
+
+
 </body>
+
 </html>

@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Cápitulo 4</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <style>
+        /* Estilos personalizados para las imágenes */
+        .imagen2 {
+            width: 100%;
+            max-width: 400px;
+            /* Ajusta el tamaño máximo según tus preferencias */
+            margin: 0 auto;
+            /* Centra la imagen horizontalmente */
+            display: block;
+            /* Asegura que la imagen esté centrada */
+            border-radius: 8px;
+            /* Agrega bordes redondeados */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Agrega sombra suave */
+            margin-bottom: 20px;
+            /* Espacio entre imágenes */
+        }
+
+        .imagen4 {
+            width: 100%;
+            max-width: 600px;
+            /* Ajusta el tamaño máximo según tus preferencias */
+            margin: 0 auto;
+            /* Centra la imagen horizontalmente */
+            display: block;
+            /* Asegura que la imagen esté centrada */
+            border-radius: 8px;
+            /* Agrega bordes redondeados */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Agrega sombra suave */
+            margin-bottom: 20px;
+            /* Espacio entre imágenes */
+        }
+    </style>
 </head>
+
 <body class="font-sans bg-gradient-to-b from-green-600 to-green-900">
-    <header class="bg-green-500 py-6">
+    <header class="bg-green-500 py-6 fixed w-full top-0 z-50" id="navbar">
         <nav class="container mx-auto flex justify-between items-center">
-            <a href="Index.html" class="text-2xl font-bold text-white">Ambiente</a>
+            <a href="Index.html" class="text-2xl font-bold text-white">Ambiente y Sustentabilidad</a>
             <ul class="flex">
                 <li class="mr-6 relative">
                     <a href="#" class="text-white hover:text-yellow-300">Unidad 1</a>
-                    <ul class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
                         <li><a href="Cap1.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 1</a></li>
                         <li><a href="Cap2.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 2</a></li>
                         <li><a href="Cap3.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 3</a></li>
@@ -19,7 +57,8 @@
                 </li>
                 <li class="mr-6 relative">
                     <a href="#" class="text-white hover:text-yellow-300">Unidad 2</a>
-                    <ul class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg">
                         <li><a href="Cap4.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 4</a></li>
                         <li><a href="Cap5.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 5</a></li>
                         <li><a href="Cap6.html" class="block px-4 py-2 hover:bg-gray-200">Capítulo 6</a></li>
@@ -29,7 +68,8 @@
                 </li>
                 <li class="relative">
                     <a href="#" class="text-white hover:text-yellow-300">Extra</a>
-                    <ul class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg left">
+                    <ul
+                        class="submenu absolute hidden bg-white bg-opacity-90 w-40 text-gray-800 py-2 rounded-lg shadow-lg left">
                         <li><a href="Material.html" class="block px-4 py-2 hover:bg-gray-200">Material de Apoyo</a></li>
                         <li><a href="conclusiones.html" class="block px-4 py-2 hover:bg-gray-200">Conclusiones</a></li>
                     </ul>
@@ -38,59 +78,93 @@
         </nav>
     </header>
 
-    <div class="container mx-auto mt-12">
-        <h1 class="text-center text-4xl mb-8">CAPÍTULO 4. LA AGENDA 21</h1>
+    <div class="container mx-auto mt-20 pt-5">
+        <h1 class="text-center text-4xl mb-8 pt-10">CAPÍTULO 4. LA AGENDA 21</h1>
 
-        <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 p-4">
-                <div class="bg-white bg-opacity-10 p-6 rounded-xl mb-12">
-                    <h2 class="text-3xl font-bold text-center mb-6">4.1 Introducción a la Agenda 21</h2>
-                    <p class="text-justify">
-                        Los problemas ambientales no son sólo problemas particulares que afecten un sitio o a un pequeño grupo de 
-                        individuos, de una región o de un país, la degradación ambiental no respeta fronteras ni límites políticos. 
-                        En tal virtud, deben adoptarse medidas de cooperación internacional para hacer frente a esos problemas.
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-200 p-6 rounded-xl mb-12">
+                <div class="text-justify mb-8">
+                    <h2 class="text-center text-3xl mb-6">Introducción a la Agenda 21</h2>
+                    <p>
+                        Los problemas ambientales no son sólo problemas particulares que afecten un sitio o a un pequeño
+                        grupo de
+                        individuos, de una región o de un país, la degradación ambiental no respeta fronteras ni límites
+                        políticos.
+                        En tal virtud, deben adoptarse medidas de cooperación internacional para hacer frente a esos
+                        problemas.
                         <br><br>
-                        Hay graves amenazas que se ciernen sobre el mundo, hay fenómenos como la lluvia ácida, el calentamiento de 
-                        la atmósfera debido a los efectos de los gases de efecto invernadero, la destrucción de los bosques tropicales, 
-                        la pérdida de especies, la destrucción de la capa de ozono, la desertificación, la destrucción del medio marino, 
-                        el cambio climático, la sobrepoblación humana y, sobre todo, la desigualdad económica y social entre los individuos 
+                        Hay graves amenazas que se ciernen sobre el mundo, hay fenómenos como la lluvia ácida, el
+                        calentamiento de
+                        la atmósfera debido a los efectos de los gases de efecto invernadero, la destrucción de los
+                        bosques tropicales,
+                        la pérdida de especies, la destrucción de la capa de ozono, la desertificación, la destrucción
+                        del medio marino,
+                        el cambio climático, la sobrepoblación humana y, sobre todo, la desigualdad económica y social
+                        entre los individuos
                         de la especie humana, la pobreza y el agotamiento de los recursos naturales.
                     </p>
                 </div>
+                <div class="flex justify-center">
+                    <img src="imagenes/sistemaabierto.png" class="imagen4" alt="Imagen de sistema abierto">
+                </div>
             </div>
-            <div class="w-full md:w-1/2 p-4">
-                <div class="bg-white bg-opacity-10 p-6 rounded-xl mb-12">
-                    <h2 class="text-3xl font-bold text-center mb-6">4.2 Antecedentes de la Agenda 21</h2>
-                    <p class="text-justify">
-                        La Agenda 21 se empezó a gestar con el movimiento iniciado en el año 1968, cuando un grupo de 35 científicos de 
-                        treinta países diferentes se reunieron en Roma, preocupados por los cambios que aquel estilo de desarrollo 
+
+            <div class="bg-gray-200 p-6 rounded-xl mb-12">
+                <div class="text-justify mb-8">
+                    <h2 class="text-center text-3xl mb-6">Antecedentes de la Agenda 21</h2>
+                    <p>
+                        La Agenda 21 se empezó a gestar con el movimiento iniciado en el año 1968, cuando un grupo de 35
+                        científicos de
+                        treinta países diferentes se reunieron en Roma, preocupados por los cambios que aquel estilo de
+                        desarrollo
                         estaba causando en el planeta.
                         <br><br>
-                        Los especialistas integrantes del Club de Roma (1970) han publicado una serie de documentos y auspiciado 
-                        movimientos y corrientes político-filosóficas relacionadas todas con los impactos del desarrollo sobre el 
-                        ambiente. Los temas prioritarios del Club de Roma sirvieron de plataforma de lanzamiento para otras reuniones 
+                        Los especialistas integrantes del Club de Roma (1970) han publicado una serie de documentos y
+                        auspiciado
+                        movimientos y corrientes político-filosóficas relacionadas todas con los impactos del desarrollo
+                        sobre el
+                        ambiente. Los temas prioritarios del Club de Roma sirvieron de plataforma de lanzamiento para
+                        otras reuniones
                         internacionales sobre el medio ambiente y el desarrollo.
                         <br>
-                        El grupo de países miembros de la Organización de Naciones Unidas decidió, en 1983, la creación de la Comisión 
-                        Mundial sobre Ambiente y Desarrollo y creó el concepto de "desarrollo sostenible", adoptado por la ONU cuando, 
-                        en 1987, la citada comisión publicó el informe "Nuestro futuro común" (Informe Brundtland) que trata de las 
-                        causas fundamentales de insostenibilidad del desarrollo y se habla de crisis ambiental, pobreza, desigualdad y 
-                        consumismo extremo en los países del norte y la falta de recursos para la mayoría de los habitantes de los 
+                        El grupo de países miembros de la Organización de Naciones Unidas decidió, en 1983, la creación
+                        de la Comisión
+                        Mundial sobre Ambiente y Desarrollo y creó el concepto de "desarrollo sostenible", adoptado por
+                        la ONU cuando,
+                        en 1987, la citada comisión publicó el informe "Nuestro futuro común" (Informe Brundtland) que
+                        trata de las
+                        causas fundamentales de insostenibilidad del desarrollo y se habla de crisis ambiental, pobreza,
+                        desigualdad y
+                        consumismo extremo en los países del norte y la falta de recursos para la mayoría de los
+                        habitantes de los
                         países del sur.
                         <br><br>
-                        El término oficial adoptado por la ONU es "Programa 21", o "Agenda 21" (plural de Agen dum). El documento contempla 
-                        una serie de asuntos que requieren atención organizada cronológicamente, para promover el desarrollo sustentable 
+                        El término oficial adoptado por la ONU es "Programa 21", o "Agenda 21" (plural de Agen dum). El
+                        documento contempla
+                        una serie de asuntos que requieren atención organizada cronológicamente, para promover el
+                        desarrollo sustentable
                         en los niveles mundial, nacional y local. ¿Por qué 21? Porque se refiere al siglo XXI.
                     </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="imagenes/aaaaa.svg" class="imagen2" alt="Imagen de radiación solar">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 flex justify-between w-2/3">
-        <a href="Cap1.html"><img src="imagenes/flechaizq.png" class="w-12 h-12 hover:w-14 hover:h-14" alt="Flecha izquierda"></a>
-        <a href="Index.html"><img src="imagenes/home.png" class="w-12 h-12 hover:w-14 hover:h-14" alt="Botón de inicio"></a>
-        <a href="Cap3.html"><img src="imagenes/flechadere.png" class="w-12 h-12 hover:w-14 hover:h-14" alt="Flecha derecha"></a>
     </div>
+
+    <div class="flex justify-between">
+        <a href="Cap1.html"><img src="imagenes/flechaizq.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Flecha izquierda"></a>
+        <a href="Index.html"><img src="imagenes/home.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Botón de inicio"></a>
+        <a href="Cap3.html"><img src="imagenes/flechadere.png" class="w-12 h-12 hover:w-14 hover:h-14"
+                alt="Flecha derecha"></a>
+    </div>
+    <script src="index.js">
+
+    </script>
 </body>
+
 </html>
